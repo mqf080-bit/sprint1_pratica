@@ -1,8 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Sprint1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.Sprint1" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Brand colours -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorOnPrimary">@color/text_on_orange</item>
+        <item name="colorSecondary">@color/navy</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/screen_bg</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+
+        <!-- The screen draws edge-to-edge: make both bars transparent. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
     <style name="Theme.Sprint1" parent="Base.Theme.Sprint1" />

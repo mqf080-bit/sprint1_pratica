@@ -7,6 +7,13 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!-- Home screen -->
+    <string name="home_label">Home</string>
+    <string name="home_welcome">Welcome! Rajesh</string>
+    <string name="home_welcome_subtitle">How is it going today?</string>
+    <string name="home_avatar_cd">User profile photo</string>
+    <string name="home_notifications_cd">Notifications</string>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus

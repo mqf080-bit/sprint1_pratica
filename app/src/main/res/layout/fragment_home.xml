@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Home screen - STEP 1
+    ====================
+    Only the top "app bar" band of the design:
+
+        (avatar)                                  (bell)
+        Welcome!
+        Rajesh
+        How is it going today?
+
+    Everything is positioned with ConstraintLayout: each view declares who it sits
+    next to (top/bottom/start/end), instead of being stacked by a container.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg">
+
+    <!-- Ambient pink wash. It is just a background view, so it is declared first
+         and therefore painted behind every sibling. -->
+    <View
+        android:id="@+id/headerGradient"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_home_header_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 1. Avatar: a fixed 44dp square. The drawable itself paints the circle. -->
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/home_avatar_cd"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_avatar_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 2. Bell: a MaterialButton lets us get a circular white surface + ripple.
+         Explicit 0dp insets/padding and 0dp min sizes defeat Material's built-in
+         88dp minimum width and 4dp elevation insets, so the 44dp box stays a circle. -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNotifications"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/home_notifications_cd"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_notifications_outline"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="22dp"
+        app:iconTint="@color/navy"
+        app:strokeColor="@color/stroke_light"
+        app:strokeWidth="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 3. Greeting headline. layout_constrainedWidth + a max width keeps the word
+         "Welcome!" on its own line on narrow screens without hardcoding "\n". -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2dp"
+        android:maxWidth="220dp"
+        android:text="@string/home_welcome"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_default="wrap" />
+
+    <!-- 4. Subtitle: one line below the headline, same left edge. -->
+    <TextView
+        android:id="@+id/tvWelcomeSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/home_welcome_subtitle"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

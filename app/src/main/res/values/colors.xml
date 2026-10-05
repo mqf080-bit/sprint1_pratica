@@ -2,4 +2,32 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- ============ Sprint1 health-app palette ============ -->
+
+    <!-- Brand / primary -->
+    <color name="navy">#12355B</color>
+    <color name="navy_light">#33547C</color>
+    <color name="orange">#F5A623</color>
+    <color name="orange_dark">#E0951A</color>
+    <color name="blue_accent">#2F6FED</color>
+
+    <!-- Text -->
+    <color name="text_primary">#12355B</color>
+    <color name="text_secondary">#9AA3AE</color>
+    <color name="text_on_orange">#FFFFFF</color>
+
+    <!-- Surfaces -->
+    <color name="screen_bg">#FFFFFF</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="stroke_light">#EDEFF3</color>
+    <color name="appointment_bar">#3F8CFF</color>
+
+    <!-- Soft pink ambient wash in the header -->
+    <color name="gradient_top">#FFF3F0</color>
+    <color name="glow_pink">#5CF9A8C0</color>
+    <color name="glow_pink_soft">#00F9A8C0</color>
+
+    <!-- Neutral placeholder used by icons that tint at runtime -->
+    <color name="icon_neutral">#12355B</color>
 </resources>

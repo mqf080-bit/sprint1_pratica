@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Ambient header wash.
+    Layer 1 = flat warm-white base.
+    Layer 2 = translucent pink oval that fades to fully transparent, pushed up and
+              to the right so it reads like a soft light source behind the photo.
+    A <shape android:shape="oval"> with a radial gradient is the cheapest way to
+    fake a soft "glow" without shipping a PNG.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gradient_top" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="520dp"
+        android:left="80dp"
+        android:right="-40dp"
+        android:top="-120dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:gradientRadius="220dp"
+                android:startColor="@color/glow_pink"
+                android:endColor="@color/glow_pink_soft"
+                android:type="radial" />
+        </shape>
+    </item>
+
+</layer-list>
