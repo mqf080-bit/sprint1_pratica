@@ -2,4 +2,29 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand -->
+    <color name="brand_blue">#FF2F7BF6</color>
+    <color name="brand_blue_icon">#FF4A90FF</color>
+    <color name="brand_navy">#FF173C78</color>
+    <color name="brand_orange">#FFFF9C27</color>
+    <color name="brand_orange_dark">#FFFF8A16</color>
+    <color name="brand_green">#FF48BD69</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FF14151C</color>
+    <color name="text_secondary">#FF7C8492</color>
+    <color name="text_muted">#FF98A0AC</color>
+    <color name="nav_icon">#FF8C95A6</color>
+
+    <!-- Surfaces -->
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_nav">#FFFAFBFD</color>
+    <color name="stroke_light">#FFE8EEF7</color>
+    <color name="divider">#FFEFF2F6</color>
+
+    <!-- Header gradient stops -->
+    <color name="header_base">#FFF8F7FB</color>
+    <color name="header_pink">#FFFBD2EB</color>
+    <color name="header_peach">#FFFBBBB6</color>
 </resources>

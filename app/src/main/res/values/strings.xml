@@ -1,11 +1,50 @@
 <resources>
     <string name="app_name">sprint1</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
+    <!-- Strings used by the navigation fragments -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
+    <!-- Home screen -->
+    <string name="welcome_title">Welcome!\nRajesh</string>
+    <string name="welcome_subtitle">How is it going today?</string>
+    <string name="urgent_care">Urgent Care</string>
+    <string name="our_services">Our Services</string>
+    <string name="service_consultation">Consultation</string>
+    <string name="service_medicines">Medicines</string>
+    <string name="service_ambulance">Ambulance</string>
+    <string name="appointment">Appointment</string>
+    <string name="see_all">See All</string>
+    <string name="appointment_date_label">Appointment date</string>
+    <string name="appointment_day">Wed Nov 20</string>
+    <string name="appointment_time">8:00 - 8:30 AM</string>
+    <string name="doctor_name">Dr. Prem Tiwari</string>
+    <string name="doctor_specialty">Orthopedic</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_profile">Your profile</string>
+    <string name="cd_notifications">Notifications</string>
+    <string name="cd_urgent_care">Open urgent care</string>
+    <string name="cd_consultation">Consultation service</string>
+    <string name="cd_medicines">Medicines service</string>
+    <string name="cd_ambulance">Ambulance service</string>
+    <string name="cd_more">More options</string>
+    <string name="cd_home">Home</string>
+    <string name="cd_records">Medical records</string>
+    <string name="cd_add">Add new appointment</string>
+    <string name="cd_chat">Messages</string>
+    <string name="cd_account">Account</string>
+
+    <!-- Demo feedback -->
+    <string name="toast_urgent_care">Urgent Care is available 24/7</string>
+    <string name="toast_see_all">Showing all appointments</string>
+    <string name="toast_appointment">Opening appointment details</string>
+    <string name="toast_new_appointment">Create a new appointment</string>
+    <string name="toast_records">Medical records</string>
+    <string name="toast_chat">Messages</string>
+    <string name="toast_account">Account</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris

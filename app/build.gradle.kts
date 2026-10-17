@@ -18,7 +18,21 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        // A project-local debug key keeps installs upgradeable (the default debug
+        // keystore cannot be written to ~/.android in this environment).
+        create("localDebug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     buildTypes {
+        getByName("debug") {
+            signingConfig = signingConfigs.getByName("localDebug")
+        }
         release {
             optimization {
                 enable = false
